@@ -2,30 +2,43 @@
 <html lang="en">
 
 <head>
+    <!-- Metadata for character encoding and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Title of the webpage -->
     <title>Login</title>
 </head>
 
 <body>
-
+    <!-- Container for the login form -->
     <div class="form-container">
-        <h2>Login</h2>
+        <h2>Login</h2> <!-- Heading for the login form -->
+
+        <!-- Form for user login, posts data to /login endpoint -->
         <form action="/login" method="post">
+            <!-- Form group for username input -->
             <div class="form-group">
-                <label for="name">Name:</label>
+                <label for="name">Name:</label> <!-- Label for username input field -->
                 <input type="text" id="name" name="username" placeholder="Enter your name" required autocomplete="off">
             </div>
+
+            <!-- Form group for password input -->
             <div class="form-group">
-                <label for="password">Password:</label>
+                <label for="password">Password:</label> <!-- Label for password input field -->
                 <input type="password" id="password" name="password" placeholder="Password" required>
             </div>
+
+            <!-- Submit button for the form -->
             <button type="submit" class="submit-btn">Login</button>
         </form>
-        <p>Don't have a accound? <a href="/signup">Signup</a></p>
-    </div>
 
+        <!-- Paragraph with a link to the signup page -->
+        <p>Don't have an account? <a href="/signup">Signup</a></p>
+    </div>
 </body>
 
 </html>
